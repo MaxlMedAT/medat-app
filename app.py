@@ -3,6 +3,7 @@ from flask import Flask, render_template_string, request, redirect, session, url
 import pandas as pd
 from datetime import datetime
 from werkzeug.security import check_password_hash, generate_password_hash
+import os
 
 app = Flask(__name__)
 app.secret_key = 'supersecurekey'  # Sollte in echter App geheim bleiben
